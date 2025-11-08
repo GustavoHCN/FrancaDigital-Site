@@ -1,0 +1,28 @@
+body{
+font-family: "Creepster", system-ui;
+   background-image: url("https://i.gifer.com/8GCP.gif");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+
+}
+
+h1{
+color: rgb(108, 28, 28);
+font-size: 40px;
+
+}
+
+p {
+color:rgb(108, 28, 28);
+font-size: 50px;
+
+}
+
+#Jack_Lantern {
+
+width: 250px;
+height: 300px;
+}
+
+
