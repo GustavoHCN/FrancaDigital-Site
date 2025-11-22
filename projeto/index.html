@@ -2,35 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="estilo.css" rel="stylesheet">
 </head>
 <body>
-    <div class="card">
-        <span class="orb orb-2"></span>
+    <div class="bg">
         <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+
     </div>
+
     <main class="page">
-        <article class="card">
-            <h2>1- Alterar cor do site</h2>
-            <p>Escolha uma cor</p>
-            <input type="color" id="seletorCor" value="#000"/>
-            <button id="btnAplicarCor">Aplicar Cor</button>
-        </article>
-        <article class="card">
-            <h2> Galeria Dinâmica</h2>
-            <p> Clique para alterar a imagem</p>
-            <div class="chips">
-                 <button class="chip" data-imagem="https://media.istockphoto.com/id/1083432296/pt/foto/old-asian-man-portrait.jpg?s=2048x2048&w=is&k=20&c=s_uo4H_fHGfaiWg7raZG5U7UAHPSWBYDlnxxmCBNVuI=">Velhinho</button>
-                <button class="chip" data-imagem="https://media.istockphoto.com/id/108355677/pt/foto/feliz-homem-idoso.jpg?s=2048x2048&w=is&k=20&c=ZqBtqyYlBeDIWbZY2vELxxwvUyOmXraYinwqspijOm8=">Vein</button>
-                <button class="chip" data-imagem="https://media.istockphoto.com/id/183017369/pt/foto/retrato-de-homem-senior-sorridente-preto.jpg?s=2048x2048&w=is&k=20&c=HedQG_dIyic-o2p-Jsl2kWPDxJCR-8K24Y91SUXEV64=">Idoso</button>
-            </div>
-            <div class="galeria" id="galeriaHero"></div>
-    </section>
-       
-</main>
+        <section class="grid">
+            <article class="card">
+                <h2>1 -Trocar cor do Site</h2>
+                <p>Escolha uma cor para o site</p>
+                <input type="color" id="seletorCor" value="red">
+                <button id="btnAplicarCor">Aplicar Cor</button>
+            </article>
+            <article class="card">
+                <h2>2 - Galeria Dinâmica</h2>
+                <p>Clique no botão para selecionar uma imagem</p>
+                <div class="chips">
+                    <button class="chip" data-image="https://images.unsplash.com/photo-1761838816945-021a4ebd67bc?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">Montanhas</button>
+                    <button class="chip" data-image="https://images.unsplash.com/photo-1763321402439-41eb2a0c7e7b?q=80&w=396&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">Cogumelos</button>
+                    <button class="chip" data-image="https://images.unsplash.com/photo-1548625361-58a9b86aa83b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGVzcGElQzMlQTdvfGVufDB8fDB8fHww">Espaço</button>      
+                </div>
+                <div class="galeria" id="galeriaHero"></div>
+            </article>
+            <article class="card">
+                <h2>3 - Google Maps</h2>
+                <p>Visualizção do Mapa</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12551382.715167385!2d17.412850042236325!3d39.8226367413501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135b4ac711716c63%3A0x363a1775dc9a2d1d!2zR3LDqWNpYQ!5e0!3m2!1spt-PT!2sbr!4v1763821275150!5m2!1spt-PT!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+        </section>
+
+        <a class="btn-whatsapp"href="https://wa.me/5516992229220"target="blank">
+            🐱‍👤 Fale no Whatsapp
+        </a>
+    </main>
+
     <script src="script.js"></script>
+    
 </body>
 </html>

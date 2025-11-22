@@ -1,12 +1,9 @@
 :root {
-  --cor-primaria: rgba(240, 7, 7, 0.801);
-  --cor-fundo: #4e0101;
-  --cor-card: rgba(73, 20, 20, 0.72);
-  --cor-texto: #f0e2e2;
-} 
- 
-
-
+  --cor-primaria: #63acffff;
+  --cor-fundo: #0f172a;
+  --cor-card: rgba(15, 23, 42, 0.72);
+  --cor-texto: #e2e8f0;
+}
 
 * {
   box-sizing: border-box;
@@ -128,6 +125,12 @@ button:hover {
   gap: 16px;
   box-shadow: 0 20px 30px rgba(15, 23, 42, 0.4);
   backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 30px 45px rgba(15, 23, 42, 0.55);
 }
 
 .card h2 {
@@ -163,33 +166,45 @@ button:hover {
   transition: transform 0.4s ease;
 }
 
+.galeria:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.35);
+}
+
+img:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.45)
+}
+
 .galeria.ativa {
   transform: scale(1.03);
 }
 
-.timeline {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+img,
+.galeria,
+.card,
+.chip {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.timeline li {
-  padding: 12px 16px;
-  border-radius: 14px;
-  background: rgba(148, 163, 184, 0.12);
-  cursor: pointer;
-  position: relative;
-  transition: background 0.2s ease, transform 0.2s ease;
+.btn-whatsapp {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #25d366;
+  color: #ffffff;
+  padding: 14px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 20px 35px rgb(71, 6, 6);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.timeline li:hover {
-  background: rgba(108, 99, 255, 0.18);
-  transform: translateX(4px);
-}
-
-.timeline li.ativo {
-  background: rgba(108, 99, 255, 0.3);
-  border-left: 4px solid var(--cor-primaria);
-  padding-left: 20px;
+.btn-whatsapp:hover {
+  transform: scale(1.1) translateY(-10px);
+  box-shadow: 0 25px 45px rgba(136, 5, 5, 0.986);
 }
